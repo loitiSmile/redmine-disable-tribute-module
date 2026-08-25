@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Redmine - Fix Typing Lag (Forced Reflow)
 // @namespace    https://github.com/loitiSmile/redmine-disable-tribute-module
-// @version      1.0
+// @version      1.0.0
 // @description  Eliminates browser freezes and keyboard typing lag on Redmine by neutralizing Tribute.js autocomplete and Forced Reflows.
 // @author       loiti
 // @match        *://*/*
@@ -9,6 +9,8 @@
 // Optional: restrict execution to your specific Redmine instance domain instead of global matching
 // // @match        https://redmine.example.com/*
 //
+// @updateURL    https://raw.githubusercontent.com/loitiSmile/redmine-disable-tribute-module/main/redmine-disable-tribute.user.js
+// @downloadURL  https://raw.githubusercontent.com/loitiSmile/redmine-disable-tribute-module/main/redmine-disable-tribute.user.js
 // @run-at       document-idle
 // @grant        none
 // ==/UserScript==

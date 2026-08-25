@@ -32,6 +32,12 @@ A Tampermonkey userscript to eliminate typing input lag and keyboard freeze caus
 
 ---
 
+## 🔄 Automatic Updates
+
+The script includes standard `@updateURL` and `@downloadURL` headers. Tampermonkey will automatically check for updates and update the script whenever a new `@version` is pushed to GitHub.
+
+---
+
 ## 🔍 Root Cause Analysis
 
 On large Redmine issue pages (tickets with extensive history, numerous notes, and large watcher/assignee lists), two main factors cause substantial input latency (up to 2 seconds per keystroke):
@@ -56,25 +62,26 @@ This userscript:
 
 ## 🚀 Step-by-Step Installation Guide (Tampermonkey)
 
-### Method 1: One-Click Direct Installation (Fastest)
+### Method 1: Install from URL in Tampermonkey Dashboard (Recommended)
 
-1. Ensure Tampermonkey is installed for [Chrome](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or [Firefox](https://addons.mozilla.org/firefox/addon/tampermonkey/).
-2. Click on the raw script link: [redmine-disable-tribute.user.js (Raw)](https://raw.githubusercontent.com/loitiSmile/redmine-disable-tribute-module/main/redmine-disable-tribute.user.js).
-3. Tampermonkey will automatically open an installation prompt showing the script metadata.
-4. Click the **Install** button.
-5. Open or refresh your Redmine instance.
+1. Open **Tampermonkey Dashboard** in your browser.
+2. Go to the **Utilities** tab.
+3. Under **Install from URL**, paste:
+   ```text
+   https://raw.githubusercontent.com/loitiSmile/redmine-disable-tribute-module/main/redmine-disable-tribute.user.js
+   ```
+4. Click **Install**.
 
 ---
 
 ### Method 2: Manual Installation via Dashboard
 
-1. **Install Tampermonkey:** Add the extension from the [Chrome Web Store](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/tampermonkey/).
-2. **Open Dashboard:** Click the Tampermonkey icon in your browser toolbar and select **Dashboard**.
-3. **Create New Script:** Click the **`+`** (Add a new script) tab.
-4. **Paste Code:** Select all existing template code, delete it, and paste the full contents of [`redmine-disable-tribute.user.js`](./redmine-disable-tribute.user.js).
-5. *(Optional)* You can customize the `@match` header to match your specific Redmine domain (e.g., `// @match https://redmine.example.com/*`).
-6. **Save:** Press `Ctrl + S` (or `Cmd + S` on macOS), or click **File -> Save**.
-7. **Verify:** Navigate to your Redmine instance and verify that the script is enabled in the Tampermonkey extension popup menu.
+1. **Open Dashboard:** Click the Tampermonkey icon in your browser toolbar and select **Dashboard**.
+2. **Create New Script:** Click the **`+`** (Add a new script) tab.
+3. **Paste Code:** Select all existing template code, delete it, and paste the full contents of [`redmine-disable-tribute.user.js`](./redmine-disable-tribute.user.js).
+4. *(Optional)* You can customize the `@match` header to match your specific Redmine domain (e.g., `// @match https://redmine.example.com/*`).
+5. **Save:** Press `Ctrl + S` (or `Cmd + S` on macOS), or click **File -> Save**.
+6. **Verify:** Navigate to your Redmine instance and verify that the script is enabled in the Tampermonkey extension popup menu.
 
 ---
 
