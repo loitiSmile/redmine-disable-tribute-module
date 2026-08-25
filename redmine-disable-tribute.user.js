@@ -5,6 +5,10 @@
 // @description  Eliminates browser freezes and keyboard typing lag on Redmine by neutralizing Tribute.js autocomplete and Forced Reflows.
 // @author       loiti
 // @match        *://*/*
+//
+// Optional: restrict execution to your specific Redmine instance domain instead of global matching
+// // @match        https://redmine.example.com/*
+//
 // @run-at       document-idle
 // @grant        none
 // ==/UserScript==
