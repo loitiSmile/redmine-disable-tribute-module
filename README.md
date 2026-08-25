@@ -1,5 +1,7 @@
 # redmine-disable-tribute-module
 
+[![CI & Security Scan](https://github.com/loitiSmile/redmine-disable-tribute-module/actions/workflows/ci.yml/badge.svg)](https://github.com/loitiSmile/redmine-disable-tribute-module/actions/workflows/ci.yml)
+
 A Tampermonkey userscript to eliminate typing input lag and keyboard freeze caused by Forced Reflows (Forced Synchronous Layout) on Redmine instances.
 
 ---

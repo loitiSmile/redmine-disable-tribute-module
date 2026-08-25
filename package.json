@@ -1,0 +1,24 @@
+{
+  "name": "redmine-disable-tribute-module",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Tampermonkey userscript to eliminate typing input lag and forced reflows on Redmine instances",
+  "main": "redmine-disable-tribute.user.js",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "lint": "eslint redmine-disable-tribute.user.js tests/"
+  },
+  "keywords": [
+    "redmine",
+    "userscript",
+    "tampermonkey",
+    "performance",
+    "forced-reflow"
+  ],
+  "author": "loiti",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "globals": "^15.0.0"
+  }
+}
